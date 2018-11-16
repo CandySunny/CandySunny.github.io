@@ -6,21 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Hello World | Hexo</title>
+  <title>lua语言入门 | 糖小爱的种草园</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="什么是luaLua是一个小巧的由标准C编写而成，几乎在所有操作系统和平台上都可以编译、运行。可以很容易的被C/C++代码调用，也可以反过来调用C/C++的函数，这使得Lua在应用程序中可以被广泛应用。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2018/11/15/hello-world/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
-<meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-11-15T08:35:53.066Z">
+<meta property="og:title" content="lua语言入门">
+<meta property="og:url" content="http://yoursite.com/2018/11/16/lua-blog/index.html">
+<meta property="og:site_name" content="糖小爱的种草园">
+<meta property="og:description" content="什么是luaLua是一个小巧的由标准C编写而成，几乎在所有操作系统和平台上都可以编译、运行。可以很容易的被C/C++代码调用，也可以反过来调用C/C++的函数，这使得Lua在应用程序中可以被广泛应用。">
+<meta property="og:locale" content="zh-cn">
+<meta property="og:updated_time" content="2018-11-16T05:03:12.641Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="lua语言入门">
+<meta name="twitter:description" content="什么是luaLua是一个小巧的由标准C编写而成，几乎在所有操作系统和平台上都可以编译、运行。可以很容易的被C/C++代码调用，也可以反过来调用C/C++的函数，这使得Lua在应用程序中可以被广泛应用。">
   
-    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="糖小爱的种草园" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
@@ -50,7 +50,7 @@
 			<img src="" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/">John Doe</a></h1>
+		  <h1 class="header-author"><a href="/">CandySunny</a></h1>
 		</hgroup>
 		
 
@@ -108,7 +108,7 @@
 				<img src="" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author">John Doe</h1>
+			  <h1 class="header-author js-header-author">CandySunny</h1>
 			</hgroup>
 			
 			
@@ -154,35 +154,644 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-hello-world" class="article article-type-post " itemscope="" itemprop="blogPost">
+            <article id="post-lua-blog" class="article article-type-post " itemscope="" itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      lua语言入门
     </h1>
   
 
         
-        <a href="/2018/11/15/hello-world/" class="archive-article-date">
-  	<time datetime="2018-11-15T08:35:53.066Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-11-15</time>
+        <a href="/2018/11/16/lua-blog/" class="archive-article-date">
+  	<time datetime="2018-11-16T02:07:39.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-11-16</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <h2 id="什么是lua"><a href="#什么是lua" class="headerlink" title="什么是lua"></a>什么是lua</h2><p>Lua是一个小巧的由标准C编写而成，几乎在所有操作系统和平台上都可以编译、运行。可以很容易的被C/C++代码调用，也可以反过来调用C/C++的函数，这使得Lua在应用程序中可以被广泛应用。</p>
+<a id="more"></a>
+<h2 id="环境准备"><a href="#环境准备" class="headerlink" title="环境准备"></a>环境准备</h2><p>去<a href="http://www.lua.org" target="_blank" rel="noopener">lua官网</a>下载源码包在linux终端解压编译即可，具体操作如下：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">tar zxf lua-5.3.3.tar.gz</span><br><span class="line"><span class="built_in">cd</span> lua-5.3.3</span><br><span class="line">make linux <span class="built_in">test</span></span><br><span class="line">sudo make install</span><br></pre></td></tr></table></figure></p>
+<p>在make linux test时可能会报错：</p>
+<ol>
+<li>lua.c:67:31: fatal error: readline/readline.h: 没有那个文件或目录  </li>
+</ol>
+<p>原因是缺少libreadline-dev依赖包，使用命令：<br>sudo apt-get install libreadline-dev安装后再重新make linux test;sudo make install即可。</p>
+<h4 id="交互式编程"><a href="#交互式编程" class="headerlink" title="交互式编程"></a>交互式编程</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ lua或lua -i</span><br><span class="line">$ Lua 5.3.3  Copyright (C) 1994-2016 Lua.org, PUC-Rio</span><br><span class="line">&gt; print(&quot;Hello World！&quot;)</span><br><span class="line">Hello World！</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="脚本式编程"><a href="#脚本式编程" class="headerlink" title="脚本式编程"></a>脚本式编程</h4><p>将 Lua 程序代码保持到一个以 lua 结尾的文件并执行，该模式称为脚本式编程，将如下代码存储在名为 hello.lua 的脚本文件中：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">print(&quot;Hello World！&quot;)</span><br><span class="line">print(&quot;www.w3cschool.cc&quot;)</span><br></pre></td></tr></table></figure></p>
+<p>使用 lua +文件名执行以上脚本，输出结果为：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ lua test.lua</span><br><span class="line">Hello World！</span><br><span class="line">www.w3cschool.cc</span><br></pre></td></tr></table></figure></p>
+<p>也可以在开头添加#!/usr/local/bin/lua指定lua解释器，为lua脚本添加执行权限，然后如下即可执行：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">./test.lua</span><br><span class="line">Hello World！</span><br><span class="line">www.w3cschool.cc</span><br></pre></td></tr></table></figure></p>
+<h2 id="lua基本语法"><a href="#lua基本语法" class="headerlink" title="lua基本语法"></a>lua基本语法</h2><h4 id="1-1注释"><a href="#1-1注释" class="headerlink" title="1.1注释"></a>1.1注释</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">单行注释：--</span><br><span class="line">多行注释：--[[</span><br><span class="line">​    代码</span><br><span class="line">​    代码</span><br><span class="line">--]]</span><br></pre></td></tr></table></figure>
+<h4 id="1-2标示符"><a href="#1-2标示符" class="headerlink" title="1.2标示符"></a>1.2标示符</h4><p>区分大小写，以一个字母 (A - Z 或 a- z )或下划线开头后加上0个或多个字母、下划线、数字（0到9）。最好不要使用下划线加大写字母的标示符，因为Lua的保留字也是这样的。不允许使用特殊字符如 @、 $和 % 来定义标示符。<br>注：和C一样，保留关键字不能做标示符，lua保留关键字如下：</p>
+<p>| —– | —– | —— | ——– |<br>| break | do    | else   | elseif   |<br>| end   | false | for    | function |<br>| if    | in    | local  | nil      |<br>| not   | or    | repeat | return   |<br>| then  | true  | until  | while    |<br>| and   |       |        |          |</p>
+<h4 id="1-3变量"><a href="#1-3变量" class="headerlink" title="1.3变量"></a>1.3变量</h4><p>全局变量：不需要申明，给一个变量赋值后即创建了这个全局变量，访问一个没有初始化的全局变量也不会出错，只不过得到的结果是：nil。如果你想删除一个全局变量，只需要将变量赋值为nil。当且仅当一个变量不为nil时，这个变量即存在。Eg：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(b)  --结果为nil</span><br><span class="line">b=10</span><br><span class="line"><span class="built_in">print</span>(b)  --结果为10</span><br><span class="line">b = nil</span><br><span class="line"><span class="built_in">print</span>(b)  --结果为nil</span><br></pre></td></tr></table></figure></p>
+<p>局部变量：用local显式申明的为局部变量，作用域为从申明开始到所在语句块结束。语句块：指一个控制结构内、一个函数体或者变量被申明的那个文件或文本串。Eg:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">-- test.lua 文件脚本</span><br><span class="line"></span><br><span class="line">x = 5                -- 全局变量</span><br><span class="line">local i = 1         -- 局部变量</span><br><span class="line">print(i)            --&gt; 1 local to the file end</span><br><span class="line"></span><br><span class="line">while i&lt;=x do</span><br><span class="line">​     local y = i*2  -- local to the while body</span><br><span class="line">​     print(y)       --&gt; 2, 4, 6, 8, 10</span><br><span class="line">​     i = i + 1</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">if i &gt; 20 then</span><br><span class="line">​     local m = 20   -- local to the &quot;then&quot; body</span><br><span class="line">​     print(m)       --&gt;20</span><br><span class="line">else</span><br><span class="line">​     print(m)       --&gt;nil</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">function joke()</span><br><span class="line">​    c = 5            -- 全局变量</span><br><span class="line">​    local d = 6     -- 局部变量</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">joke()</span><br><span class="line">print(c,d)         --&gt; 5 nil</span><br><span class="line">a = 5               -- 全局变量</span><br><span class="line"></span><br><span class="line">do </span><br><span class="line">​    local a = 6    -- 局部变量</span><br><span class="line">​    b = 6           -- 全局变量</span><br><span class="line">​    print(a,b);    --&gt; 6 6</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">print(a,b)      --&gt; 5 6</span><br><span class="line">print(i)         --&gt; 6</span><br></pre></td></tr></table></figure></p>
+<h4 id="1-4数据类型"><a href="#1-4数据类型" class="headerlink" title="1.4数据类型"></a>1.4数据类型</h4><p>下表列出了Lua的常用数据类型，可以使用type()函数求得数据类型。</p>
+<table>
+<thead>
+<tr>
+<th>数据类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>nil</td>
+<td>这个最简单，只有值nil属于该类，表示一个无效值（在条件表达式中相当于false）。</td>
+</tr>
+<tr>
+<td>boolean</td>
+<td>包含两个值：false和true，Lua 把 false 和 nil 看作是”假”，其他的都为”真”。0和空串都为真</td>
+</tr>
+<tr>
+<td>number</td>
+<td>表示双精度类型的实浮点数，如2,2.2,0.2,2e+1,0.2e-1都是number类型</td>
+</tr>
+<tr>
+<td>string</td>
+<td>字符串由一对双引号或单引号来表示，也可以用 2 个方括号 “[[]]” 来表示”一块”字符串。使用 # 来计算字符串的长度，放在字符串前面；使用..连接字符串</td>
+</tr>
+<tr>
+<td>function</td>
+<td>由 C 或 Lua 编写的函数，可以存在变量里，可以作为函数的参数，也可以作为函数的返回值。（备注：由C编写个人理解是lua是可以调用C）</td>
+</tr>
+<tr>
+<td>userdata</td>
+<td>一种用户自定义数据，用于表示一种由应用程序或 C/C++ 语言库所创建的类型，可以将任意 C/C++ 的任意数据类型的数据（通常是 struct 和 指针）存储到 Lua 变量中调用</td>
+</tr>
+<tr>
+<td>thread</td>
+<td>表示执行的独立线路，用于执行协同程序</td>
+</tr>
+<tr>
+<td>table</td>
+<td>Lua 中的表（table）其实是一个”关联数组”（associative arrays），数组的索引可以是数字或者是字符串。在 Lua 里，table 的创建是通过”构造表达式”来完成，最简单构造表达式是{}，用来创建一个空表。默认初始索引以1开始</td>
+</tr>
+</tbody>
+</table>
+<h4 id="1-5字符串常用方法"><a href="#1-5字符串常用方法" class="headerlink" title="1.5字符串常用方法"></a>1.5字符串常用方法</h4><table>
+<thead>
+<tr>
+<th>序号</th>
+<th>方法 &amp; 用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>string.upper(argument):字符串全部转为大写字母。&gt; print(string.upper(“AbCfe”))ABCFE</td>
+</tr>
+<tr>
+<td>2</td>
+<td>string.lower(argument):字符串全部转为小写字母。&gt; print(string.lower(“AbCfe”))abcfe</td>
+</tr>
+<tr>
+<td>3</td>
+<td>string.gsub(mainString,findString,replaceString,num)在字符串中替换,mainString为要替换的字符串， findString 为被替换的字符，replaceString 要替换的字符，num 替换次数（可以忽略，则全部替换），如：&gt; print(string.gsub(“aaaa”,”a”,”z”,3))zzza    3</td>
+</tr>
+<tr>
+<td>4</td>
+<td>string. find (str, substr, [init, [end]])在一个指定的目标字符串中搜索指定的内容(第三个参数为索引),返回其具体位置。不存在则返回 nil。若字符串中存在多个指定目标字符串，则返回由第三个参数索引指定位置开始找到的第一个目标字符串的具体位置。&gt; print(string.find(“Hello Lua user”, “Lua”, 1)) 7    9&gt; print(string.find(“Hello Lua user Lua Lua”, “Lua”, 7)) 7    9&gt; print(string.find(“Hello Lua user Lua Lua”, “Lua”, 8)) 16    18</td>
+</tr>
+<tr>
+<td>5</td>
+<td>string.match(s, pattern [, init])在字符串s中查找满足参数pattern的匹配子串，如果找到了一个匹配就返回这个匹配子串，若没找到则返回nil。数字形参数init用来指定查找字符串的起始位置，默认为1。也可以设置为负数，即-n表示从字符串尾部向前数n个字符开始查找。&gt; print(string.match(“today is 19/2/2001 11/21/2011”,”%d+/%d+/%d+”)19/2/2001&gt; print(string.match(“today is 19/2/2001 11/21/2011”,”%d+/%d+/%d+”))19/2/2001</td>
+</tr>
+<tr>
+<td>6</td>
+<td>string.reverse(arg)字符串反转&gt; print(string.reverse(“Lua”))auL</td>
+</tr>
+<tr>
+<td>7</td>
+<td>string.sub(s,init [, end])函数截取字符串s的从第init个字符到第end个字符之间的串，end可省略，省略后表示到字符串末尾。&gt; print(string.sub(“abcde”, 2,4))   – 输出：bcd&gt; print(string.sub(“abcde”, 2))   – 输出：bcde</td>
+</tr>
+<tr>
+<td>8</td>
+<td>string.gmatch(str, pattern)返回一个迭代函数 可以遍历出现的目标字符串。&gt;  for w in string.gmatch(“hello world from Lua”, “%a+”) do&gt;     print(w)&gt; end–输出：   hello                world                from                Lua</td>
+</tr>
+<tr>
+<td>9</td>
+<td>string.format(…)返回一个类似printf的格式化字符串&gt; print(string.format(“the value is:%d”,4))the value is:4&gt;print(string.format(“the value is:%f”,4))the value is:4.000000&gt; print(string.format(“the value is:%.5f”,4))the value is:4.00000</td>
+</tr>
+<tr>
+<td>10</td>
+<td>string.char(arg) 将整型数字转成字符并连接。&gt; print(string.char(65,98,99,100))Abcd</td>
+</tr>
+<tr>
+<td>11</td>
+<td>string.byte(arg[,pos])返回第pos个字符的整数表示形式，最多只能指定两个字符，不指定默认为第一个字符。&gt; print(string.byte(“ABCDE”))65&gt; print(string.byte(“ABCDE”,4))68&gt; print(string.byte(“ABCDE”,3,4))67 68&gt; print(string.byte(“ABCDE”,3,4,5))67 68</td>
+</tr>
+<tr>
+<td>12</td>
+<td>string.len(arg)计算字符串长度。&gt; print(string.len(“123”))3</td>
+</tr>
+<tr>
+<td>13</td>
+<td>string.rep(string, n))返回字符串string的n个拷贝&gt; print(string.rep(“abcd”,2))abcdabcd</td>
+</tr>
+<tr>
+<td>14</td>
+<td>..链接两个字符串&gt; print(“<a href="http://www.w3cschool&quot;..&quot;cc&quot;)www.w3cschoolcc" target="_blank" rel="noopener">www.w3cschool&quot;..&quot;cc&quot;)www.w3cschoolcc</a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="1-6-正则表达式"><a href="#1-6-正则表达式" class="headerlink" title="1.6 正则表达式"></a>1.6 正则表达式</h4><p>正则表达式通常用于两种任务：1）验证；2）搜索/替换。不同语言有不同但类似的匹配机制，可能在判断首尾的方式和符号用法上有略微差异。<br>Lua支持的所有字符类如下：</p>
+<table>
+<thead>
+<tr>
+<th>元字符</th>
+<th>描述</th>
+<th>实例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.(点)</td>
+<td>匹配任意字符，包括中文、字母、数字、符号等</td>
+<td></td>
+</tr>
+<tr>
+<td>%</td>
+<td>特殊符号转义</td>
+<td>%.为匹配点，%%为匹配百分比符号</td>
+</tr>
+<tr>
+<td>%a</td>
+<td>匹配字母，大小写都匹配</td>
+<td></td>
+</tr>
+<tr>
+<td>%b</td>
+<td>匹配对称字符，%bxy，x为开始匹配字符，y为结束匹配字符，xy可随意指定</td>
+<td>‘%b()’匹配以<code>(′开始， 以</code>)′结束的字符串: print(string.match(“a enclosed (in) parentheses line”, “%b()”))  – 输出：(in)</td>
+</tr>
+<tr>
+<td>%c</td>
+<td>与任何控制符配对(例如\n)</td>
+<td></td>
+</tr>
+<tr>
+<td>%d</td>
+<td>匹配数字，0-9</td>
+<td></td>
+</tr>
+<tr>
+<td>%l</td>
+<td>匹配小写字母a-z</td>
+<td></td>
+</tr>
+<tr>
+<td>%p</td>
+<td>匹配标点符号</td>
+<td></td>
+</tr>
+<tr>
+<td>%s</td>
+<td>匹配空白符号，包括\t（tab键四格空白），\n（新行的标示），\r（换行的标示）</td>
+<td></td>
+</tr>
+<tr>
+<td>%u</td>
+<td>匹配大写字母A-Z</td>
+<td></td>
+</tr>
+<tr>
+<td>%w</td>
+<td>匹配字母和数字</td>
+<td></td>
+</tr>
+<tr>
+<td>%x</td>
+<td>匹配十六进制数字</td>
+<td></td>
+</tr>
+<tr>
+<td>%z</td>
+<td>匹配代表0的字符</td>
+<td></td>
+</tr>
+<tr>
+<td>()</td>
+<td>匹配与返回括号内的内容</td>
+<td>pair = “name = anna”key, value = string.match(pair, “(%a+)%s<em>=%s</em>(%a+)”)print(key, value) –&gt; name anna</td>
+</tr>
+<tr>
+<td>[]</td>
+<td>自定义匹配字符集</td>
+<td>[a-z0-9，%.]匹配a到z以及0-9还有逗号，百分比号跟点</td>
+</tr>
+<tr>
+<td>[^数个字符类]</td>
+<td>与任何不包含在[]中的字符类配对</td>
+<td>[^a-z0-9，%.]匹配除字符集以外的其他字符</td>
+</tr>
+<tr>
+<td>+</td>
+<td>匹配前一字符1次或多次，总是进行最长的匹配</td>
+<td>s_str = “<font>a</font><font>b</font>“des = “<font>.+</font>“rep = “<div>replace</div>“print(string.gsub(s_str,des,rep))– <div>replace</div>    1</td>
+</tr>
+<tr>
+<td>*</td>
+<td>匹配前一字符0次或多次</td>
+<td>s_str = “<font>a</font><font>b</font>“des = “<font>.*</font>“rep = “<div>replace</div>“print(string.gsub(s_str,des,rep))– <div>replace</div>    1</td>
+</tr>
+<tr>
+<td>-</td>
+<td>匹配前一字符0次或多次，最短匹配，在进行所有字符匹配时匹配最短</td>
+<td>s_str = “<font>a</font><font>b</font>“des = “<font>.-</font>“rep = “<div>replace</div>“print(string.gsub(s_str,des,rep))– <div>replace</div><div>replace</div>    2</td>
+</tr>
+<tr>
+<td>?</td>
+<td>匹配前一字符0次或1次，例如：匹配正负数字，因为正数不带负号</td>
+<td>s_str = “<font>a</font><font>b</font>“des = “<font>.?</font>“rep = “<div>replace</div>“print(string.gsub(s_str,des,rep))– <div>replace</div><div>replace</div>    2</td>
+</tr>
+<tr>
+<td>^</td>
+<td>匹配开头，例如：^%d+为以数字开头的匹配，可与匹配结尾一同使用</td>
+<td></td>
+</tr>
+<tr>
+<td>$</td>
+<td>匹配结尾，例如：%d+$为以数字开头的结尾，可与匹配开头一同使用</td>
+</tr>
+</tbody>
+</table>
+<p>注：当上述的字符类用大写书写时, 表示与非此字符类的任何字符配对. 例如, %S表示与任何非空白字符配对.例如，’%A’非字母的字符。</p>
+<h4 id="1-6表达式"><a href="#1-6表达式" class="headerlink" title="1.6表达式"></a>1.6表达式</h4><ul>
+<li>算术运算符</li>
+</ul>
+<p>下表列出了 Lua 语言中的常用算术运算符：</p>
+<table>
+<thead>
+<tr>
+<th>操作符</th>
+<th>描述</th>
+<th>A的值</th>
+<th>B的值</th>
+<th>实例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>+</td>
+<td>加法</td>
+<td>10</td>
+<td>20</td>
+<td>A + B 输出结果 30</td>
+</tr>
+<tr>
+<td>-</td>
+<td>减法</td>
+<td>10</td>
+<td>20</td>
+<td>A - B 输出结果 -10</td>
+</tr>
+<tr>
+<td>*</td>
+<td>乘法</td>
+<td>10</td>
+<td>20</td>
+<td>A * B 输出结果 200</td>
+</tr>
+<tr>
+<td>/</td>
+<td>除法</td>
+<td>10</td>
+<td>20</td>
+<td>B / A w输出结果 2</td>
+</tr>
+<tr>
+<td>%</td>
+<td>取余</td>
+<td>10</td>
+<td>20</td>
+<td>B % A 输出结果 0</td>
+</tr>
+<tr>
+<td>^</td>
+<td>乘幂</td>
+<td>10</td>
+<td>20</td>
+<td>A^2 输出结果 100</td>
+</tr>
+<tr>
+<td>-</td>
+<td>负号</td>
+<td>10</td>
+<td>20</td>
+<td>-A 输出结果v -10</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>关系运算符</li>
+</ul>
+<p>下表列出了 Lua 语言中的常用关系运算符，设定 A 的值为10，B 的值为 20：</p>
+<table>
+<thead>
+<tr>
+<th>操作符</th>
+<th>描述</th>
+<th>实例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>==</td>
+<td>等于，检测两个值是否相等，相等返回 true，否则返回 false</td>
+<td>(A == B) 为 false。</td>
+</tr>
+<tr>
+<td>~=</td>
+<td>不等于，检测两个值是否相等，相等返回 false，否则返回 true&lt;</td>
+<td>(A ~= B) 为 true。</td>
+</tr>
+<tr>
+<td>&gt;</td>
+<td>大于，如果左边的值大于右边的值，返回 true，否则返回 false</td>
+<td>(A &gt; B) 为 false。</td>
+</tr>
+<tr>
+<td>&lt;</td>
+<td>小于，如果左边的值大于右边的值，返回 false，否则返回 true</td>
+<td>(A &lt; B) 为 true。</td>
+</tr>
+<tr>
+<td>&gt;=</td>
+<td>大于等于，如果左边的值大于等于右边的值，返回 true，否则返回 false</td>
+<td>(A &gt;= B) 返回 false。</td>
+</tr>
+<tr>
+<td>&lt;=</td>
+<td>小于等于， 如果左边的值小于等于右边的值，返回 true，否则返回 false</td>
+<td>(A &lt;= B) 返回 true。</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>逻辑运算符</li>
+</ul>
+<p>下表列出了 Lua 语言中的常用逻辑运算符，设定 A 的值为 true，B 的值为 false：</p>
+<table>
+<thead>
+<tr>
+<th>操作符</th>
+<th>描述</th>
+<th>实例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>and</td>
+<td>逻辑与操作符。 如果两边的操作都为 true 则条件为 true。</td>
+<td>(A and B) 为 false。</td>
+</tr>
+<tr>
+<td>or</td>
+<td>逻辑或操作符。 如果两边的操作任意一个为 true 则条件为 true。</td>
+<td>(A or B) 为 true。</td>
+</tr>
+<tr>
+<td>not</td>
+<td>逻辑非操作符。与逻辑运算结果相反，如果条件为 true，逻辑非为 false。</td>
+<td>not(A and B) 为 true。</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>其他运算符</li>
+</ul>
+<p>下表列出了 Lua 语言中的连接运算符与计算表或字符串长度的运算符：</p>
+<table>
+<thead>
+<tr>
+<th>操作符</th>
+<th>描述</th>
+<th>实例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>..</td>
+<td>连接两个字符串</td>
+<td>a..b ，其中 a 为 “Hello “ ， b 为 “World”, 输出结果为 “Hello World”。</td>
+</tr>
+<tr>
+<td>#</td>
+<td>一元运算符，返回字符串或表的长度。</td>
+<td>#”Hello” 返回 5</td>
+</tr>
+</tbody>
+</table>
+<h4 id="1-7循环"><a href="#1-7循环" class="headerlink" title="1.7循环"></a>1.7循环</h4><ul>
+<li>while语法：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">while(condition) do</span><br><span class="line">   statements</span><br><span class="line">end</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>statements(循环体语句) 可以是一条或多条语句，condition(条件) 可以是任意表达式，在condition(条件)为true时执行循环体语句。Eg：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">a=10</span><br><span class="line">while( a &lt; 20 ) do</span><br><span class="line">   print(&quot;a 的值为:&quot;, a)</span><br><span class="line">   a = a+1</span><br><span class="line">end</span><br></pre></td></tr></table></figure></p>
+<p>输出结果为：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">a的值为：10</span><br><span class="line">a的值为：11</span><br><span class="line">a的值为：12</span><br><span class="line">a的值为：13</span><br><span class="line">a的值为：14</span><br><span class="line">a的值为：15</span><br><span class="line">a的值为：16</span><br><span class="line">a的值为：17</span><br><span class="line">a的值为：18</span><br><span class="line">a的值为：19</span><br></pre></td></tr></table></figure></p>
+<ul>
+<li>for循环：</li>
+</ul>
+<p>分为数值for循环和泛型for循环。其中数值for循环个人理解和C语言的for循环是类似的。for的三个表达式在循环开始前一次性求值，以后不再进行求值。</p>
+<p>数值for循环语法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">​	for var=exp1,exp2,exp3 do</span><br><span class="line">​		&lt;执行体&gt;</span><br><span class="line">​	end</span><br></pre></td></tr></table></figure></p>
+<p>var从exp1变化到exp2，每次变化以exp3为步长递增var，并执行一次”执行体”。exp3是可选的，如果不指定，默认为1。</p>
+<p>​泛型for循环语法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">--打印数组a的所有值  </span><br><span class="line">for i,v in ipairs(a) do </span><br><span class="line">​	print(v) </span><br><span class="line">end</span><br></pre></td></tr></table></figure></p>
+<p>i是数组索引值，v是对应索引的数组元素值。ipairs是Lua提供的一个迭代器函数，用来迭代数组。</p>
+<p>pairs 和 ipairs区别:</p>
+<ul>
+<li>pairs: 迭代 table，可以遍历表中所有的 key 可以返回 nil</li>
+<li>ipairs: 迭代数组，不能返回 nil,如果遇到 nil 则退出</li>
+</ul>
+<p>代码示例：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">tab= &#123; </span><br><span class="line">[1] = &quot;a&quot;, </span><br><span class="line">[3] = &quot;b&quot;, </span><br><span class="line">[4] = &quot;c&quot; </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">for i,v in pairs(tab) do        -- 输出 &quot;a&quot; ,&quot;b&quot;, &quot;c&quot;  ,</span><br><span class="line">​    print( tab[i] ) </span><br><span class="line">end </span><br><span class="line"></span><br><span class="line">for i,v in ipairs(tab) do    -- 输出 &quot;a&quot; </span><br><span class="line">​    print( tab[i] ) </span><br><span class="line">end</span><br></pre></td></tr></table></figure></p>
+<ul>
+<li>repeat..until语法：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">repeat</span><br><span class="line">   statements</span><br><span class="line">until( condition )</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>注意:到循环条件判断语句（condition）在循环体末尾部分，所以在条件进行判断前循环体都会执行一次。</p>
+<p>如果条件判断语句（condition）为 false，循环会重新开始执行，直到条件判断语句（condition）为 true 才会停止执行。（一开始理解的和c语言do…while一致，最后发现不一致，do…while是判断条件为true则继续执行循环体，条件为false则跳出循环；lua刚好相反。）</p>
+<h4 id="1-8流程控制"><a href="#1-8流程控制" class="headerlink" title="1.8流程控制"></a>1.8流程控制</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">if(布尔表达式)then</span><br><span class="line">   --[ 在布尔表达式为 true 时执行的语句 --]</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">if(布尔表达式) then</span><br><span class="line">   --[ 在布尔表达式为 true 时执行的语句 --]</span><br><span class="line">else</span><br><span class="line">   --[ 在布尔表达式为 false 时执行的语句 --]</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">if(布尔表达式1) then</span><br><span class="line">   --[ 在布尔表达式1为 true 时执行的语句 --]</span><br><span class="line">elseif(布尔表达式2) then</span><br><span class="line">   --[ 在布尔表达式1为 false布尔表达式2为 true时执行的语句 --]</span><br><span class="line">else</span><br><span class="line">   --[ 在布尔表达式1、2都为 false 时执行的语句 --]</span><br><span class="line">end</span><br></pre></td></tr></table></figure>
+<h4 id="1-9模块与包"><a href="#1-9模块与包" class="headerlink" title="1.9模块与包"></a>1.9模块与包</h4><p>Lua 的模块是由变量、函数等已知元素组成的 table，因此创建一个模块很简单，就是创建一个 table，然后把需要导出的常量、函数放入其中，最后返回这个 table 就行。以下为创建自定义模块 moduletest.lua，文件代码格式如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">-- 文件名为 moduletest.lua</span><br><span class="line">-- 定义一个名为 module_test 的模块</span><br><span class="line">Module_test = &#123;&#125;</span><br><span class="line">-- 定义一个常量</span><br><span class="line">module_test.constant = &quot;这是一个常量&quot;</span><br><span class="line"></span><br><span class="line">-- 定义一个函数</span><br><span class="line">function module_test.func1()</span><br><span class="line">​    io.write(&quot;这是一个公有函数！\n&quot;)</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">local function func2()</span><br><span class="line">​    print(&quot;这是一个私有函数！&quot;)</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">function module_test.func3()</span><br><span class="line">​    func2()</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">return module_test</span><br></pre></td></tr></table></figure></p>
+<p>创建test.lua文件，在其中加载module_test模块并使用，文件代码如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">test_func = require “moduletest”</span><br><span class="line">test_fun.func1()</span><br><span class="line">输出结果：</span><br><span class="line">这是一个公有函数！</span><br></pre></td></tr></table></figure></p>
+<p>特别注意：<br>require加载模块格式：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">require(&quot;&lt;模块名&gt;&quot;) 或 require &quot;&lt;模块名&gt;&quot;</span><br></pre></td></tr></table></figure></p>
+<ol>
+<li>用require载入相同的文件时，只有第一次执行，以后都不执行。</li>
+<li>如果你想让每次载入都执行文件，那么可以使用dofile（“my.lua”）</li>
+<li>如果你想载入的时候不执行文件，等需要的时候再执行文件，那么可以使用loadfile（“my.lua”）</li>
+</ol>
+<p>举个简单例子，有个模块my.lua，内容如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(“this is a lua module”)</span><br></pre></td></tr></table></figure></p>
+<p>创建test.lua文件使用不同方式加载模块，执行结果如下：</p>
+<table>
+<thead>
+<tr>
+<th>加载函数</th>
+<th>test.lua代码内容</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>require</td>
+<td>require(“my”)require(“my”)</td>
+<td>this is a lua module</td>
+</tr>
+<tr>
+<td>dofile</td>
+<td>dofile(“my.lua”)dofile(“my.lua”)</td>
+<td>this is a lua modulethis is a lua module</td>
+</tr>
+<tr>
+<td>loadfile</td>
+<td>loadfile(“my.lua”)</td>
+<td>无输出</td>
+</tr>
+</tbody>
+</table>
+<h4 id="2-0函数"><a href="#2-0函数" class="headerlink" title="2.0函数"></a>2.0函数</h4><p>Lua 函数主要有两种用途：</p>
+<ol>
+<li>完成指定的任务，这种情况下函数作为调用语句使用；</li>
+<li>计算并返回值，这种情况下函数作为赋值语句的表达式使用。</li>
+</ol>
+<p>语法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">optional_function_scope function function_name( argument1, argument2, argument3..., argumentn)</span><br><span class="line">​	function_body</span><br><span class="line">​	return result_params_comma_separated</span><br><span class="line">end</span><br></pre></td></tr></table></figure></p>
+<p>解析：</p>
+<ul>
+<li>optional_function_scope: 该参数是可选的制定函数是全局函数还是局部函数，未设置该参数默认为全局函数，如果你需要设置函数为局部函数需要使用关键字local。</li>
+<li>result_params_comma_separated:函数返回值，Lua语言函数可以返回多个值，每个值以逗号隔开。</li>
+</ul>
+<h4 id="2-1文件操作"><a href="#2-1文件操作" class="headerlink" title="2.1文件操作"></a>2.1文件操作</h4><p>I/O 库为文件操作提供两种模式。简单模式（simple model）拥有一个当前输入文件和一个当前输出文件，并且提供针对这些文件相关的操作。完全模式（complete model）使用外部的文件句柄来实现。它以一种面对对象的形式，将所有的文件操作定义为文件句柄的方法。</p>
+<p>简单模式：<br>简单模式使用标准的 I/O 或使用一个当前输入文件和一个当前输出文件。并且提供针对这些文件相关的操作。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">io.read() --类似于scanf，由标准输入输入</span><br><span class="line">io.write() –类似于printf，输出到标准输出</span><br></pre></td></tr></table></figure></p>
+<p>以下为 file.lua 文件代码，操作的文件为test.lua(如果没有你需要创建该文件)，代码如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">-- 以只读方式打开文件</span><br><span class="line">file = io.open(&quot;test.lua&quot;, &quot;r&quot;)</span><br><span class="line"></span><br><span class="line">-- 设置默认输入文件为 test.lua</span><br><span class="line">io.input(file)</span><br><span class="line"></span><br><span class="line">-- 输出文件第一行</span><br><span class="line">print(io.read())</span><br><span class="line"></span><br><span class="line">-- 关闭打开的文件</span><br><span class="line">io.close(file)</span><br><span class="line"></span><br><span class="line">-- 以附加的方式打开只写文件</span><br><span class="line">file = io.open(&quot;test.lua&quot;, &quot;a&quot;)</span><br><span class="line"></span><br><span class="line">-- 设置默认输出文件为 test.lua</span><br><span class="line">io.output(file)</span><br><span class="line"></span><br><span class="line">-- 在文件最后一行添加 Lua 注释</span><br><span class="line">io.write(&quot;--  test.lua 文件末尾注释&quot;)</span><br><span class="line"></span><br><span class="line">-- 关闭打开的文件</span><br><span class="line">io.close(file)</span><br></pre></td></tr></table></figure></p>
+<p>其他的 io 方法有：</p>
+<ul>
+<li>io.tmpfile():返回一个临时文件句柄，该文件以更新模式打开，程序结束时自动删除；</li>
+<li>io.type(file): 检测obj是否一个可用的文件句柄；</li>
+<li>io.flush(): 向文件写入缓冲中的所有数据；</li>
+<li>io.lines(optional file name): 返回一个迭代函数,每次调用将获得文件中的一行内容,当到文件尾时，将返回nil,但不关闭文件。</li>
+</ul>
+<p>完全模式：<br>完全模式的核心在于文件句柄（file handle）。该结构类似于 C 语言中的文件流（FILE*），其呈现了一个打开的文件以及当前存取位置。打开一个文件的函数是 io.open。它模仿 C 语言中的 fopen 函数，同样需要打开文件的文件名参数，打开模式的字符串参数。需要使用 file:function_name 来代替 io.function_name 方法。打开文件操作语句如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">file = io.open (filename [, mode])</span><br></pre></td></tr></table></figure></p>
+<p>mode 的值有：</p>
+<table>
+<thead>
+<tr>
+<th>模式</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>r</td>
+<td>以只读方式打开文件，该文件必须存在。</td>
+</tr>
+<tr>
+<td>w</td>
+<td>打开只写文件，若文件存在则文件长度清为0，即该文件内容会消失。若文件不存在则建立该文件。</td>
+</tr>
+<tr>
+<td>a</td>
+<td>以附加的方式打开只写文件。若文件不存在，则会建立该文件，如果文件存在，写入的数据会被加到文件尾，即文件原先的内容会被保留。（EOF符保留）</td>
+</tr>
+<tr>
+<td>r+</td>
+<td>以可读写方式打开文件，该文件必须存在。</td>
+</tr>
+<tr>
+<td>w+</td>
+<td>打开可读写文件，若文件存在则文件长度清为零，即该文件内容会消失。若文件不存在则建立该文件。</td>
+</tr>
+<tr>
+<td>a+</td>
+<td>与a类似，但此文件可读可写</td>
+</tr>
+<tr>
+<td>b</td>
+<td>二进制模式，如果文件是二进制文件，可以加上b</td>
+</tr>
+<tr>
+<td>+</td>
+<td>号表示对文件既可以读也可以写</td>
+</tr>
+</tbody>
+</table>
+<p>若一个文件1.txt内容为123456789，以w方式打开后写入abc，则原有文件内容被清空，内容被更新为abc。</p>
+<p>其他方法:</p>
+<ul>
+<li>file:seek(optional whence, optional offset): 设置和获取当前文件位置,成功则返回最终的文件位置(按字节),失败则返回nil加错误信息。参数 whence 值可以是:<ul>
+<li>“set”: 从文件头开始</li>
+<li>“cur”: 从当前位置开始[默认]</li>
+<li>“end”: 从文件尾开始</li>
+<li>offset:默认为0</li>
+</ul>
+</li>
+</ul>
+<p>不带参数file:seek()则返回当前位置,file:seek(“set”)则定位到文件头,file:seek(“end”)则定位到文件尾并返回文件大小</p>
+<ul>
+<li>file:flush(): 向文件写入缓冲中的所有数据</li>
+<li>io.lines(optional file name): 打开指定的文件filename为读模式并返回一个迭代函数,每次调用将获得文件中的一行内容,当到文件尾时，将返回nil,并自动关闭文件。若不带参数时io.lines() &lt;=&gt; io.input():lines(); 读取默认输入设备的内容，但结束时不关闭文件。</li>
+</ul>
+<h4 id="2-2表（table）"><a href="#2-2表（table）" class="headerlink" title="2.2表（table）"></a>2.2表（table）</h4><p>table 在 Lua 里是一种重要的数据结构，它可以说是其他数据结构的基础，通常的数组、记录、线性表、队列、集合等数据结构都可以用 table 来表示，甚至连全局变量（<a href="http://www.lua.org/manual/5.2/manual.html" target="_blank" rel="noopener">_G</a>）、<a href="http://dhq.me/lua-learning-notes-package-and-module" target="_blank" rel="noopener">模块</a>、元表（metatable）等这些重要的Lua元素都是 table 的结构。可以说，table是一个强大而又神奇的东西。</p>
+<ul>
+<li>table特性：</li>
+</ul>
+<ol>
+<li>table是一个“关联数组”，数组的索引可以是数字或者是字符串；</li>
+<li>table 的默认初始索引一般以 1 开始；</li>
+<li>table 的变量只是一个地址引用，对 table 的操作不会产生数据影响；</li>
+<li>table 不会固定长度大小，有新数据插入时长度会自动增长。</li>
+</ol>
+<ul>
+<li>table操作常用方法：（注：start、end、pos都为number）</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>序号</th>
+<th>方法 &amp; 用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>table.concat (table [, sep [, start [, end]]]):concat是concatenate(连锁, 连接)的缩写. table.concat()函数列出参数中指定table的数组部分从start位置到end位置的所有元素, 元素间以指定的分隔符(sep)隔开。Eg：letters = {“a”,”b”,”c”}print(“连接后的字符串 “,table.concat(letters)) – 返回 table 连接后的字符串print(“连接后的字符串 “,table.concat(letters,”, “))– 指定连接字符print(“连接后的字符串 “,table.concat(letters,”, “, 2,3)) – 指定索引来连接 table输出结果：连接后的字符串     abc连接后的字符串     a, b, c连接后的字符串     b, c</td>
+</tr>
+<tr>
+<td>2</td>
+<td>table.insert (table, [pos,] value):在table的数组部分指定位置(pos)插入值为value的一个元素. pos参数可选, 默认为数组部分末尾.eg：fruits = {“banana”,”orange”,”apple”}table.insert(fruits,”mango”)– 在末尾插入print(“索引为 4 的元素为 “,fruits[4]) –mangotable.insert(fruits,2,”grapes”)– 在索引为 2 的键处插入print(“索引为 2 的元素为 “,fruits[2]) –grapesprint(“索引为 5 的元素为 “,fruits[5]) –mango</td>
+</tr>
+<tr>
+<td>3</td>
+<td>table.maxn (table)指定table中所有正数key值中最大的key值. 如果不存在key值为正数的元素, 则返回0。(Lua5.2之后该方法已经不存在了)</td>
+</tr>
+<tr>
+<td>4</td>
+<td>table.remove (table [, pos])返回table数组部分位于pos位置的元素. 其后的元素会被前移. pos参数可选, 默认为table长度, 即从最后一个元素删起。Eg:letters = {“a”,”b”,”c”}print(“索引为 2 的元素为 “, letters[2]) –btable.remove(letters,2)–移除索引为2的元素print(“索引为 2 的元素为 “,letters[2]) –ctable.remove(letters)–移除最后一个元素print(“索引为 2 的元素为 “,letters[2]) –nil</td>
+</tr>
+<tr>
+<td>5</td>
+<td>table.sort (table [, comp])对给定的table进行升序排序。参数 comp 是一个排序对比函数，它有两个参数 param1、param2，如果 param1 排在 param2 前面，那么排序函数返回 true，否则返回 false。参数 comp 可选，缺省 comp 的情况下是对表作升序排序。Eg：letters = {“d”,”c”,”a”}print(“排序前”)for k,v in ipairs(letters) do       print(k,v)endtable.sort(letters)print(“排序后”)for k,v in ipairs(letters) do       print(k,v)end结果：排序前1    d2    c3    a排序后1    a2    c3    d</td>
+</tr>
+</tbody>
+</table>
+<h4 id="2-3元表（metatable）"><a href="#2-3元表（metatable）" class="headerlink" title="2.3元表（metatable）"></a>2.3元表（metatable）</h4><p>在 Lua table 中我们可以访问对应的key来得到value值，但是却无法对两个 table 进行操作。因此 Lua 提供了元表(Metatable)，允许我们改变table的行为，每个行为关联了对应的元方法。例如，使用元表我们可以定义Lua如何计算两个table的相加操作a+b。当Lua试图对两个表进行相加时，先检查两者之一是否有元表，之后检查是否有一个叫”<strong>add”的字段，若找到，则调用对应的值。”</strong>add”等即时字段，其对应的值（往往是一个函数或是table）就是”元方法”。</p>
+<p>有两个很重要的函数来处理元表：</p>
+<ul>
+<li>setmetatable(table,metatable): 对指定table设置元表(metatable)，如果元表(metatable)中存在__metatable键值，setmetatable会失败 。</li>
+<li>getmetatable(table): 返回对象的元表(metatable)。</li>
+</ul>
+<p>元表可以包含任何东西,但是元表通常以”<strong>“（两个下划线）开头的索引（当然string类型）来调用。例如</strong>index和__newindex。 和索引对应的值可以是表或者函数，例如:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">t = setmetatable(&#123;&#125;, &#123;</span><br><span class="line">  __index = function(t, key)</span><br><span class="line">​    if key == &quot;foo&quot; then</span><br><span class="line">​      return 0</span><br><span class="line">​    else</span><br><span class="line">​      return table[key]</span><br><span class="line">​    end</span><br><span class="line">  end</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">other = &#123; foo = 3 &#125; </span><br><span class="line">t = setmetatable(&#123;&#125;, &#123; __index = other &#125;) print(t.foo)   -- 3 ，现在__index包含的表&#123;foo=3&#125;查找 print(t.bar)   -- nil ，没找到</span><br></pre></td></tr></table></figure></p>
+<p>Eg：创建metatable_test.lua文件，修改<strong>index、</strong>newindex元方法，创建一个只读表，文件内容如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">function readOnly(t)</span><br><span class="line">​     local proxy = &#123;&#125;</span><br><span class="line">​     -- 创建元表</span><br><span class="line">​     local mt = &#123;</span><br><span class="line">​          __index = t,</span><br><span class="line">​          __newindex = function (t, k, v)</span><br><span class="line">​               print(&quot;Attempt to update a read-only table&quot;)</span><br><span class="line">​          end</span><br><span class="line">​     &#125;</span><br><span class="line">​     setmetatable(proxy, mt)</span><br><span class="line">​     return proxy</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">local tbDemo = readOnly&#123;1, 2, 3, 4, 5&#125;</span><br><span class="line">print(tbDemo[1])    --1</span><br><span class="line">tbDemo[1] = 20      --Attempt to update a read-only table</span><br></pre></td></tr></table></figure></p>
+<p>注： Lua 会先查找已有的索引，接着查找表的metatable里（如果它有）查找<strong>index索引。 如果</strong>index包含了表, Lua会在<strong>index包含的表里查找索引。如果</strong>index 包含一个函数，当被它调用时，会把被访问的表和索引作为参数传入。<br>给表中不存在的值赋值时，Lua会在metatable里查找<strong>newindex，调用顺序和</strong>index一样。如果__newindex是表，索引和值会设置到指定的表。</p>
+<h2 id="Lua与C交互"><a href="#Lua与C交互" class="headerlink" title="Lua与C交互"></a>Lua与C交互</h2><p>lua和c之间的交互的桥梁是一个虚拟栈，这个虚拟栈在lua的c api中为lua_State。下面的代码展示了从创建栈、元素入栈、根据索引获取栈中元素的值的过程，这也是lua_State的最基本的操作。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">lua_State *L = luaL_newstate();//创建一个新的栈</span><br><span class="line">lua_pushstring(L, &quot;muzixiaoxin&quot;); //把一个字符串压入栈</span><br><span class="line">lua_pushnumber(L, 875);//把一个整型压入栈</span><br><span class="line"></span><br><span class="line">//现在栈内有两个元素，栈底是字符串&quot;muzixiaoxin&quot;，栈顶是整型875</span><br><span class="line">//&quot;muzixiaoxin&quot;的索引就是1，或者-2</span><br><span class="line">//855的索引就是2，或者-1</span><br><span class="line"></span><br><span class="line">if (lua_isstring(L, 1))&#123;//判断栈底的元素是不是字符串</span><br><span class="line">  printf(&quot;%s\n&quot;,lua_tostring(L, 1));//如果是字符串就转换成字符串输出</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">if (lua_isnumber(L, -1))&#123;//判断栈顶元素是不是number类型</span><br><span class="line">  printf(&quot;%d&quot;, lua_tonumber(L, 2));//如果是就转换成number类型输出</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">lua_close(L); //记得不需要的时候要释放掉</span><br></pre></td></tr></table></figure></p>
+<h4 id="1-1-C调用Lua"><a href="#1-1-C调用Lua" class="headerlink" title="1.1 C调用Lua"></a>1.1 C调用Lua</h4><p>Lua作为配置文件给c调用。<br>第一步创建lua配置文件test.lua:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">name=Lucy</span><br><span class="line">number=1008</span><br></pre></td></tr></table></figure></p>
+<p>c需要通过lua c api把test.lua文件加载进来后执行，执行的结果存在一个栈中， 去这个栈中拿到变量的值。</p>
+<p>看下面的c代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">lua_State *L = luaL_newstate();</span><br><span class="line">int err = luaL_loadfile(L, &quot;test.lua&quot;); //把lua文件加载成代码块，只加载不运行</span><br><span class="line">if (err)&#123;</span><br><span class="line">  return;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">err = lua_pcall(L, 0, 0, 0);//运行加载的代码块</span><br><span class="line">if (err)&#123;</span><br><span class="line">  return;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">lua_getglobal(L, &quot;name&quot;); //把全局变量name的值压入栈顶</span><br><span class="line">printf(&quot;%s\n&quot;, lua_tostring(L, -1));//取出栈顶元素打印结果为:Lucy</span><br><span class="line">lua_close(L); //记得不需要的时候要释放掉</span><br></pre></td></tr></table></figure></p>
+<h4 id="1-2-Lua调用C"><a href="#1-2-Lua调用C" class="headerlink" title="1.2 Lua调用C"></a>1.2 Lua调用C</h4><p>求和的c方法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//计算求和的方法</span><br><span class="line">static intsum(int a, int b)&#123;  </span><br><span class="line">  return a + b;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>要让lua使用这个方法，就要先把这个方法注册给lua的状态机，但注册给lua状态机的方法要求有固定的参数和固定的返回值，参数要是是一个lua虚拟栈，这个虚拟栈存放着lua传过来的参数，lua调用的返回值也要通过这个虚拟栈返回给lua，最后的返回值要求是一个int值，存着返回给lua变量的个数。我们看写好的方法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">//lua调用的方法</span><br><span class="line">static int lsum(lua_State *L)&#123;</span><br><span class="line">  int a = (int)lua_tonumber(L, -1);//lua调用的参数之一</span><br><span class="line">  int b = (int)lua_tonumber(L, -2);//lua调用的参数之一</span><br><span class="line">  lua_pushnumber(L, sum(a, b));//把计算的加过压栈</span><br><span class="line">  return 1;//返回返回值的个数</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//下一步是把lsum这个方法注册给lua状态机：</span><br><span class="line">lua_State *L = luaL_newstate();</span><br><span class="line">luaL_openlibs(L);//打开L中的所有标准库，这样就可以使用print方法</span><br><span class="line">lua_register(L, &quot;sum&quot;, lsum);//把c函数lsum注册为lua的一个全局变量sum</span><br><span class="line">int err = luaL_dofile(L, &quot;test.lua&quot;); //把lua文件加载成代码块，并运行</span><br><span class="line"></span><br><span class="line">if (err)&#123;</span><br><span class="line">  return;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">lua_close(L);</span><br></pre></td></tr></table></figure></p>
+<p>要通过一个中间函数（像lsum这种）对lua虚拟栈进行操作来实现lua调用c的方法。</p>
+<h2 id="Lua-全局作用域"><a href="#Lua-全局作用域" class="headerlink" title="Lua    全局作用域"></a>Lua    全局作用域</h2><p>在Lua脚本层，Lua将所有的全局变量保存在一个常规的table中，这个table被称为全局环境，并且将这个table保存在一个全局变量_G中，也就是说在脚本中可以用_G获取这个全局table，并且有_G._G == _G，在默认情况，Lua在全局环境_G中添加了标准库比如math、函数比如pairs等。</p>
 
       
 
@@ -262,7 +871,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/11/15/hello-world/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/11/16/lua-blog/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -311,7 +920,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2018 John Doe
+    		&copy; 2018 CandySunny
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
