@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="糖小爱的种草园">
 <meta property="og:description" content="什么是luaLua是一个小巧的由标准C编写而成，几乎在所有操作系统和平台上都可以编译、运行。可以很容易的被C/C++代码调用，也可以反过来调用C/C++的函数，这使得Lua在应用程序中可以被广泛应用。">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2018-11-16T05:03:12.641Z">
+<meta property="og:updated_time" content="2018-11-16T05:40:26.844Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="lua语言入门">
 <meta name="twitter:description" content="什么是luaLua是一个小巧的由标准C编写而成，几乎在所有操作系统和平台上都可以编译、运行。可以很容易的被C/C++代码调用，也可以反过来调用C/C++的函数，这使得Lua在应用程序中可以被广泛应用。">
@@ -188,7 +188,54 @@
 <p>也可以在开头添加#!/usr/local/bin/lua指定lua解释器，为lua脚本添加执行权限，然后如下即可执行：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">./test.lua</span><br><span class="line">Hello World！</span><br><span class="line">www.w3cschool.cc</span><br></pre></td></tr></table></figure></p>
 <h2 id="lua基本语法"><a href="#lua基本语法" class="headerlink" title="lua基本语法"></a>lua基本语法</h2><h4 id="1-1注释"><a href="#1-1注释" class="headerlink" title="1.1注释"></a>1.1注释</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">单行注释：--</span><br><span class="line">多行注释：--[[</span><br><span class="line">​    代码</span><br><span class="line">​    代码</span><br><span class="line">--]]</span><br></pre></td></tr></table></figure>
 <h4 id="1-2标示符"><a href="#1-2标示符" class="headerlink" title="1.2标示符"></a>1.2标示符</h4><p>区分大小写，以一个字母 (A - Z 或 a- z )或下划线开头后加上0个或多个字母、下划线、数字（0到9）。最好不要使用下划线加大写字母的标示符，因为Lua的保留字也是这样的。不允许使用特殊字符如 @、 $和 % 来定义标示符。<br>注：和C一样，保留关键字不能做标示符，lua保留关键字如下：</p>
-<p>| —– | —– | —— | ——– |<br>| break | do    | else   | elseif   |<br>| end   | false | for    | function |<br>| if    | in    | local  | nil      |<br>| not   | or    | repeat | return   |<br>| then  | true  | until  | while    |<br>| and   |       |        |          |</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:center"></th>
+<th style="text-align:center"></th>
+<th style="text-align:center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">break</td>
+<td style="text-align:center">do</td>
+<td style="text-align:center">else</td>
+<td style="text-align:center">elseif</td>
+</tr>
+<tr>
+<td style="text-align:center">end</td>
+<td style="text-align:center">false</td>
+<td style="text-align:center">for</td>
+<td style="text-align:center">function</td>
+</tr>
+<tr>
+<td style="text-align:center">if</td>
+<td style="text-align:center">in</td>
+<td style="text-align:center">local</td>
+<td style="text-align:center">nil</td>
+</tr>
+<tr>
+<td style="text-align:center">not</td>
+<td style="text-align:center">or</td>
+<td style="text-align:center">repeat</td>
+<td style="text-align:center">return</td>
+</tr>
+<tr>
+<td style="text-align:center">then</td>
+<td style="text-align:center">true</td>
+<td style="text-align:center">until</td>
+<td style="text-align:center">while</td>
+</tr>
+<tr>
+<td style="text-align:center">and</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table>
 <h4 id="1-3变量"><a href="#1-3变量" class="headerlink" title="1.3变量"></a>1.3变量</h4><p>全局变量：不需要申明，给一个变量赋值后即创建了这个全局变量，访问一个没有初始化的全局变量也不会出错，只不过得到的结果是：nil。如果你想删除一个全局变量，只需要将变量赋值为nil。当且仅当一个变量不为nil时，这个变量即存在。Eg：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(b)  --结果为nil</span><br><span class="line">b=10</span><br><span class="line"><span class="built_in">print</span>(b)  --结果为10</span><br><span class="line">b = nil</span><br><span class="line"><span class="built_in">print</span>(b)  --结果为nil</span><br></pre></td></tr></table></figure></p>
 <p>局部变量：用local显式申明的为局部变量，作用域为从申明开始到所在语句块结束。语句块：指一个控制结构内、一个函数体或者变量被申明的那个文件或文本串。Eg:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">-- test.lua 文件脚本</span><br><span class="line"></span><br><span class="line">x = 5                -- 全局变量</span><br><span class="line">local i = 1         -- 局部变量</span><br><span class="line">print(i)            --&gt; 1 local to the file end</span><br><span class="line"></span><br><span class="line">while i&lt;=x do</span><br><span class="line">​     local y = i*2  -- local to the while body</span><br><span class="line">​     print(y)       --&gt; 2, 4, 6, 8, 10</span><br><span class="line">​     i = i + 1</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">if i &gt; 20 then</span><br><span class="line">​     local m = 20   -- local to the &quot;then&quot; body</span><br><span class="line">​     print(m)       --&gt;20</span><br><span class="line">else</span><br><span class="line">​     print(m)       --&gt;nil</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">function joke()</span><br><span class="line">​    c = 5            -- 全局变量</span><br><span class="line">​    local d = 6     -- 局部变量</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">joke()</span><br><span class="line">print(c,d)         --&gt; 5 nil</span><br><span class="line">a = 5               -- 全局变量</span><br><span class="line"></span><br><span class="line">do </span><br><span class="line">​    local a = 6    -- 局部变量</span><br><span class="line">​    b = 6           -- 全局变量</span><br><span class="line">​    print(a,b);    --&gt; 6 6</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">print(a,b)      --&gt; 5 6</span><br><span class="line">print(i)         --&gt; 6</span><br></pre></td></tr></table></figure></p>
 <h4 id="1-4数据类型"><a href="#1-4数据类型" class="headerlink" title="1.4数据类型"></a>1.4数据类型</h4><p>下表列出了Lua的常用数据类型，可以使用type()函数求得数据类型。</p>
@@ -196,41 +243,41 @@
 <thead>
 <tr>
 <th>数据类型</th>
-<th>描述</th>
+<th style="text-align:left">描述</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>nil</td>
-<td>这个最简单，只有值nil属于该类，表示一个无效值（在条件表达式中相当于false）。</td>
+<td style="text-align:left">这个最简单，只有值nil属于该类，表示一个无效值（在条件表达式中相当于false）。</td>
 </tr>
 <tr>
 <td>boolean</td>
-<td>包含两个值：false和true，Lua 把 false 和 nil 看作是”假”，其他的都为”真”。0和空串都为真</td>
+<td style="text-align:left">包含两个值：false和true，Lua 把 false 和 nil 看作是”假”，其他的都为”真”。0和空串都为真</td>
 </tr>
 <tr>
 <td>number</td>
-<td>表示双精度类型的实浮点数，如2,2.2,0.2,2e+1,0.2e-1都是number类型</td>
+<td style="text-align:left">表示双精度类型的实浮点数，如2,2.2,0.2,2e+1,0.2e-1都是number类型</td>
 </tr>
 <tr>
 <td>string</td>
-<td>字符串由一对双引号或单引号来表示，也可以用 2 个方括号 “[[]]” 来表示”一块”字符串。使用 # 来计算字符串的长度，放在字符串前面；使用..连接字符串</td>
+<td style="text-align:left">字符串由一对双引号或单引号来表示，也可以用 2 个方括号 “[[]]” 来表示”一块”字符串。使用 # 来计算字符串的长度，放在字符串前面；使用..连接字符串</td>
 </tr>
 <tr>
 <td>function</td>
-<td>由 C 或 Lua 编写的函数，可以存在变量里，可以作为函数的参数，也可以作为函数的返回值。（备注：由C编写个人理解是lua是可以调用C）</td>
+<td style="text-align:left">由 C 或 Lua 编写的函数，可以存在变量里，可以作为函数的参数，也可以作为函数的返回值。（备注：由C编写个人理解是lua是可以调用C）</td>
 </tr>
 <tr>
 <td>userdata</td>
-<td>一种用户自定义数据，用于表示一种由应用程序或 C/C++ 语言库所创建的类型，可以将任意 C/C++ 的任意数据类型的数据（通常是 struct 和 指针）存储到 Lua 变量中调用</td>
+<td style="text-align:left">一种用户自定义数据，用于表示一种由应用程序或 C/C++ 语言库所创建的类型，可以将任意 C/C++ 的任意数据类型的数据（通常是 struct 和 指针）存储到 Lua 变量中调用</td>
 </tr>
 <tr>
 <td>thread</td>
-<td>表示执行的独立线路，用于执行协同程序</td>
+<td style="text-align:left">表示执行的独立线路，用于执行协同程序</td>
 </tr>
 <tr>
 <td>table</td>
-<td>Lua 中的表（table）其实是一个”关联数组”（associative arrays），数组的索引可以是数字或者是字符串。在 Lua 里，table 的创建是通过”构造表达式”来完成，最简单构造表达式是{}，用来创建一个空表。默认初始索引以1开始</td>
+<td style="text-align:left">Lua 中的表（table）其实是一个”关联数组”（associative arrays），数组的索引可以是数字或者是字符串。在 Lua 里，table 的创建是通过”构造表达式”来完成，最简单构造表达式是{}，用来创建一个空表。默认初始索引以1开始</td>
 </tr>
 </tbody>
 </table>
@@ -238,65 +285,65 @@
 <thead>
 <tr>
 <th>序号</th>
-<th>方法 &amp; 用途</th>
+<th style="text-align:left">方法 &amp; 用途</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>1</td>
-<td>string.upper(argument):字符串全部转为大写字母。&gt; print(string.upper(“AbCfe”))ABCFE</td>
+<td style="text-align:left">string.upper(argument):字符串全部转为大写字母。&gt; print(string.upper(“AbCfe”))ABCFE</td>
 </tr>
 <tr>
 <td>2</td>
-<td>string.lower(argument):字符串全部转为小写字母。&gt; print(string.lower(“AbCfe”))abcfe</td>
+<td style="text-align:left">string.lower(argument):字符串全部转为小写字母。&gt; print(string.lower(“AbCfe”))abcfe</td>
 </tr>
 <tr>
 <td>3</td>
-<td>string.gsub(mainString,findString,replaceString,num)在字符串中替换,mainString为要替换的字符串， findString 为被替换的字符，replaceString 要替换的字符，num 替换次数（可以忽略，则全部替换），如：&gt; print(string.gsub(“aaaa”,”a”,”z”,3))zzza    3</td>
+<td style="text-align:left">string.gsub(mainString,findString,replaceString,num)在字符串中替换,mainString为要替换的字符串， findString 为被替换的字符，replaceString 要替换的字符，num 替换次数（可以忽略，则全部替换），如：&gt; print(string.gsub(“aaaa”,”a”,”z”,3))zzza    3</td>
 </tr>
 <tr>
 <td>4</td>
-<td>string. find (str, substr, [init, [end]])在一个指定的目标字符串中搜索指定的内容(第三个参数为索引),返回其具体位置。不存在则返回 nil。若字符串中存在多个指定目标字符串，则返回由第三个参数索引指定位置开始找到的第一个目标字符串的具体位置。&gt; print(string.find(“Hello Lua user”, “Lua”, 1)) 7    9&gt; print(string.find(“Hello Lua user Lua Lua”, “Lua”, 7)) 7    9&gt; print(string.find(“Hello Lua user Lua Lua”, “Lua”, 8)) 16    18</td>
+<td style="text-align:left">string. find (str, substr, [init, [end]])在一个指定的目标字符串中搜索指定的内容(第三个参数为索引),返回其具体位置。不存在则返回 nil。若字符串中存在多个指定目标字符串，则返回由第三个参数索引指定位置开始找到的第一个目标字符串的具体位置。&gt; print(string.find(“Hello Lua user”, “Lua”, 1)) 7    9&gt; print(string.find(“Hello Lua user Lua Lua”, “Lua”, 7)) 7    9&gt; print(string.find(“Hello Lua user Lua Lua”, “Lua”, 8)) 16    18</td>
 </tr>
 <tr>
 <td>5</td>
-<td>string.match(s, pattern [, init])在字符串s中查找满足参数pattern的匹配子串，如果找到了一个匹配就返回这个匹配子串，若没找到则返回nil。数字形参数init用来指定查找字符串的起始位置，默认为1。也可以设置为负数，即-n表示从字符串尾部向前数n个字符开始查找。&gt; print(string.match(“today is 19/2/2001 11/21/2011”,”%d+/%d+/%d+”)19/2/2001&gt; print(string.match(“today is 19/2/2001 11/21/2011”,”%d+/%d+/%d+”))19/2/2001</td>
+<td style="text-align:left">string.match(s, pattern [, init])在字符串s中查找满足参数pattern的匹配子串，如果找到了一个匹配就返回这个匹配子串，若没找到则返回nil。数字形参数init用来指定查找字符串的起始位置，默认为1。也可以设置为负数，即-n表示从字符串尾部向前数n个字符开始查找。&gt; print(string.match(“today is 19/2/2001 11/21/2011”,”%d+/%d+/%d+”)19/2/2001&gt; print(string.match(“today is 19/2/2001 11/21/2011”,”%d+/%d+/%d+”))19/2/2001</td>
 </tr>
 <tr>
 <td>6</td>
-<td>string.reverse(arg)字符串反转&gt; print(string.reverse(“Lua”))auL</td>
+<td style="text-align:left">string.reverse(arg)字符串反转&gt; print(string.reverse(“Lua”))auL</td>
 </tr>
 <tr>
 <td>7</td>
-<td>string.sub(s,init [, end])函数截取字符串s的从第init个字符到第end个字符之间的串，end可省略，省略后表示到字符串末尾。&gt; print(string.sub(“abcde”, 2,4))   – 输出：bcd&gt; print(string.sub(“abcde”, 2))   – 输出：bcde</td>
+<td style="text-align:left">string.sub(s,init [, end])函数截取字符串s的从第init个字符到第end个字符之间的串，end可省略，省略后表示到字符串末尾。&gt; print(string.sub(“abcde”, 2,4))   – 输出：bcd&gt; print(string.sub(“abcde”, 2))   – 输出：bcde</td>
 </tr>
 <tr>
 <td>8</td>
-<td>string.gmatch(str, pattern)返回一个迭代函数 可以遍历出现的目标字符串。&gt;  for w in string.gmatch(“hello world from Lua”, “%a+”) do&gt;     print(w)&gt; end–输出：   hello                world                from                Lua</td>
+<td style="text-align:left">string.gmatch(str, pattern)返回一个迭代函数 可以遍历出现的目标字符串。&gt;  for w in string.gmatch(“hello world from Lua”, “%a+”) do&gt;     print(w)&gt; end–输出：   hello                world                from                Lua</td>
 </tr>
 <tr>
 <td>9</td>
-<td>string.format(…)返回一个类似printf的格式化字符串&gt; print(string.format(“the value is:%d”,4))the value is:4&gt;print(string.format(“the value is:%f”,4))the value is:4.000000&gt; print(string.format(“the value is:%.5f”,4))the value is:4.00000</td>
+<td style="text-align:left">string.format(…)返回一个类似printf的格式化字符串&gt; print(string.format(“the value is:%d”,4))the value is:4&gt;print(string.format(“the value is:%f”,4))the value is:4.000000&gt; print(string.format(“the value is:%.5f”,4))the value is:4.00000</td>
 </tr>
 <tr>
 <td>10</td>
-<td>string.char(arg) 将整型数字转成字符并连接。&gt; print(string.char(65,98,99,100))Abcd</td>
+<td style="text-align:left">string.char(arg) 将整型数字转成字符并连接。&gt; print(string.char(65,98,99,100))Abcd</td>
 </tr>
 <tr>
 <td>11</td>
-<td>string.byte(arg[,pos])返回第pos个字符的整数表示形式，最多只能指定两个字符，不指定默认为第一个字符。&gt; print(string.byte(“ABCDE”))65&gt; print(string.byte(“ABCDE”,4))68&gt; print(string.byte(“ABCDE”,3,4))67 68&gt; print(string.byte(“ABCDE”,3,4,5))67 68</td>
+<td style="text-align:left">string.byte(arg[,pos])返回第pos个字符的整数表示形式，最多只能指定两个字符，不指定默认为第一个字符。&gt; print(string.byte(“ABCDE”))65&gt; print(string.byte(“ABCDE”,4))68&gt; print(string.byte(“ABCDE”,3,4))67 68&gt; print(string.byte(“ABCDE”,3,4,5))67 68</td>
 </tr>
 <tr>
 <td>12</td>
-<td>string.len(arg)计算字符串长度。&gt; print(string.len(“123”))3</td>
+<td style="text-align:left">string.len(arg)计算字符串长度。&gt; print(string.len(“123”))3</td>
 </tr>
 <tr>
 <td>13</td>
-<td>string.rep(string, n))返回字符串string的n个拷贝&gt; print(string.rep(“abcd”,2))abcdabcd</td>
+<td style="text-align:left">string.rep(string, n))返回字符串string的n个拷贝&gt; print(string.rep(“abcd”,2))abcdabcd</td>
 </tr>
 <tr>
 <td>14</td>
-<td>..链接两个字符串&gt; print(“<a href="http://www.w3cschool&quot;..&quot;cc&quot;)www.w3cschoolcc" target="_blank" rel="noopener">www.w3cschool&quot;..&quot;cc&quot;)www.w3cschoolcc</a></td>
+<td style="text-align:left">..链接两个字符串&gt; print(“<a href="http://www.w3cschool&quot;..&quot;cc&quot;)www.w3cschoolcc" target="_blank" rel="noopener">www.w3cschool&quot;..&quot;cc&quot;)www.w3cschoolcc</a></td>
 </tr>
 </tbody>
 </table>
@@ -418,6 +465,7 @@
 <tr>
 <td>$</td>
 <td>匹配结尾，例如：%d+$为以数字开头的结尾，可与匹配开头一同使用</td>
+<td></td>
 </tr>
 </tbody>
 </table>
